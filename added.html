@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palmpay Adder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: blue;
+    }
+    img {
+      width: 50%;
+      height:50%;
+      display: block;
+      margin: 0;
+      margin-bottom: 20px;
+      border-radius: 60px;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    
+    .login-container input[type="text"],
+    .login-container input[type="number"],
+    .login-container input[type="email"] {
+      width: 80%;
+      padding: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 20px;
+      margin: 10px;
+      background-color: white;
+      outline:none;
+    }
+    button {
+      width: 90%;
+      padding: 10px;
+      margin: 10px;
+      border: none;
+      border-radius: 30px;
+      color: blue;
+      cursor: pointer;
+      text-align: center;
+    }
+    h1 {
+      color: red;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      color: white;
+    }
+    #tier {
+      width: 40%;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: white;
+      margin:10px;
+    }
+    label {
+      margin-bottom: 5px;
+      color: white;
+    }
+   .mark {
+   background-color:white;
+  } 
+  </style>
+</head>
+<body>
+  <marquee class="mark"behavior="scroll" direction="right"><b>THIS IS ULTIMATE PALMPAY BALANCE ADDER</b></marquee>
+  <h1>Palmpay Adder</h1>
+  <img src="file:///storage/emulated/0/Pictures/Screenshots/Screenshot_2024-11-25-12-56-27.png" alt="Palmpay Logo">
+  <p>Please note: you must have a Palmpay account before you use this tool. Also, make sure you have at least #1000 in your Palmpay account before proceeding to use this tool to avoid unnecessary adding.</p>
+  <div class="login-container">
+    <label for="account-num">Enter your Palmpay account number</label>
+    <input type="number" id="account-num" placeholder="e.g 1234567890">
+    <label for="account-name">Enter your account name</label>
+    <input type="text" id="account-name" placeholder="e.g John Doe">
+    <label for="amount">Enter the amount you want to add</label>
+    <input type="text" id="text" placeholder="e.g #1000">
+    <label for="email">Enter your email</label>
+    <input type="email" id="email" placeholder="e.g johndoe1234@gmail.com">
+    <label for="tier">Which tier are you?</label>
+    <select id="tier">
+      <option value="tier-1">Tier 1</option>
+      <option value="tier-2">Tier 2</option>
+      <option value="tier-3">Tier 3</option>
+    </select>
+    <input type="checkbox"id="checked">
+    <label for="unknown">anonymous</label>
+    <input type="checkbox"id="checked">
+    <label for="no-restriction">No restriction</label>
+    <button onclick="click()" id="add">Add</button>
+  </div>
+  <p>Please be notified that when you add a certain amount, it may take some time for the money to be added to your balance.</p>
+ 
+  <script>
+      function click() {
+      let name = document.getElementById('account-name').value;
+      let amount = document.getElementById('text').value;
+      let Date = new Date();
+      let gmail = document.getElementById('email').value;
+      let accountnum = document.getElementById('account-num').value;
+      alert("Dear" + name + "you have added" + amount + "to your palmpay account at" + accountnum + Date + "please wait to be credited" + "further information will be send to your email @" + gmail + "Thank You") 
+     } 
+     alert("Add money to your account asap")
+      </script>
+</body>
+</html>
+ 
